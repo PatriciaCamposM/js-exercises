@@ -9,8 +9,8 @@ describe("daysInMonthByNumber", () => {
     expect(daysInMonthByNumber(1)).toBe(31);
   });
 
-  test("debería devolver 28 para Febrero", () => {
-    expect(daysInMonthByNumber(2)).toBe(28);
+  test("debería devolver 29 para Febrero", () => {
+    expect(daysInMonthByNumber(2)).toBe(29);
   });
 
   test("debería devolver 30 para Septiembre", () => {

@@ -4,6 +4,8 @@ const {
   missingVariable,
   addMissingCondition,
   convertir,
+  getFirstValue,
+  addUp,
 } = require("../exercises/basicos");
 
 describe("updateNum", () => {

@@ -15,15 +15,37 @@
  *   y 12 para diciembre.
  * @return {number} El número de días en el mes dado
  */
+// Aqui tu codigo
 function daysInMonthByNumber(monthNum) {
-  // Aqui tu codigo
+   if (
+      monthNum === 1 ||
+      monthNum === 3 ||
+      monthNum === 5 ||
+      monthNum === 7 ||
+      monthNum === 8 ||
+      monthNum === 10 ||
+      monthNum === 12
+   ) {
+      return 31;
+   } else if (monthNum === 2) {
+      return 29;
+   } else if (
+      monthNum === 4 ||
+      monthNum === 6 ||
+      monthNum === 9 ||
+      monthNum === 11
+   ) {
+      return 30;
+   } else {
+      return 0;
+   }
 }
 
 /**
  * Dada una calificación numérica de 0 a 100, devuelve una calificación de letra.
  *
  * Los puntos de corte de menos/más son en 2 y 6, respectivamente. Por ejemplo,
- * 80-82 es un B+, 83-86 es un B, y 87-89 es un B+. Cualquier cosa por debajo de 60 es una F.
+ * 80-82 es un B-, 83-86 es un B, y 87-89 es un B+. Cualquier cosa por debajo de 60 es una F.
  *
  * @example
  * letterGrade(50); // => 'F'
@@ -35,7 +57,19 @@ function daysInMonthByNumber(monthNum) {
  * @return {string} La calificación de letra correspondiente para la calificación de porcentaje dada.
  */
 function letterGrade(percentGrade) {
-  // Código de la función
+   // Código de la función
+   if (percentGrade >= 90 && percentGrade <= 100) {
+      return "A";
+   } else if (percentGrade >= 80 && percentGrade <= 86) {
+      return "B";
+   } else if (percentGrade >= 70 && percentGrade <= 76) {
+      return "C";
+   } else if (percentGrade >= 60 && percentGrade <= 62) {
+      return "D";
+   } else percentGrade <= 60;
+   {
+      return "F";
+   }
 }
 
 /**
@@ -64,11 +98,11 @@ function letterGrade(percentGrade) {
  *    el primer jugador ganó, perdió o empató el partido.
  */
 function rockPaperScissorsWinner(firstPlayerMove, secondPlayerMove) {
-  // Aqui tu codigo
+   // Aqui tu codigo
 }
 
 module.exports = {
-  daysInMonthByNumber,
-  letterGrade,
-  rockPaperScissorsWinner,
+   daysInMonthByNumber,
+   letterGrade,
+   rockPaperScissorsWinner,
 };

@@ -1,12 +1,13 @@
 // Te piden que devuelva la funcion updateNum a 2, actualmente devuelve 1
 function updateNum() {
-  let num = 1;
+  let num = 2;
   return num;
 }
 
 // Te piden que asignes un valor a la variable num y retorne 5
 function assignValue() {
-  let num;
+  let num = 5;
+  return num;
 }
 
 /**
@@ -15,7 +16,10 @@ function assignValue() {
  * Declara una variable llamada numOne, asignale el valor 3 y devuelve numTwo.
  */
 function missingVariable() {
+  let numOne = 3;
   let numTwo = numOne;
+
+  return numTwo;
 }
 
 /**
@@ -25,10 +29,12 @@ function missingVariable() {
  * debe devolver el `text`
  */
 function addMissingCondition() {
-  // let text = 'hello';
-  // if () {
-  //    text = text + ' world';
-  // }
+  let text = 'hello';
+
+  if (text = text + ' world') {
+
+  }
+  return text;
 }
 
 /**
@@ -41,6 +47,9 @@ function addMissingCondition() {
  */
 function convertir(num) {
   // Aqui tu codigo
+  var numeroEntero = 60;
+  var num = num * numeroEntero;
+  return num;
 }
 
 /**
@@ -53,10 +62,12 @@ function convertir(num) {
  */
 function getFirstValue(array) {
   // Aqui tu codigo
+  return array[0];
 }
 
 /**
- *Crea una función que tome un número como argumento. Suma todos los números desde 1 hasta el número que pasaste a la función. Por ejemplo, si el número de entrada es 4, entonces tu función debería devolver 10, porque 1 + 2 + 3 + 4 = 10.
+ *Crea una función que tome un número como argumento. Suma todos los números desde 1 hasta el número que pasaste a la función. 
+ *Por ejemplo, si el número de entrada es 4, entonces tu función debería devolver 10, porque 1 + 2 + 3 + 4 = 10.
  *Ejemplos:
  *addUp(4) ➞ 10
  *addUp(13) ➞ 91
@@ -64,6 +75,13 @@ function getFirstValue(array) {
  */
 function addUp(num) {
   // Aqui tu codigo
+  var suma = 0;
+  for (var i = 0; i <= num; i++) {
+    suma += i;
+
+  }
+  return suma;
+
 }
 
 module.exports = {
